@@ -26,10 +26,8 @@ This repository proves that high-level tactical software involving complex hardw
 I am releasing this project as **Open Source / As-Is**. I will **not** be providing updates, bug fixes, or responding to issues.
 
 **Why is this archived?**
-1.  **Tooling Constraints:** This app was built entirely on a smartphone using **AndroidIDE**. The environment is currently limited to **Android 14 (SDK 34)**, preventing further modernization without migrating to a PC workflow.
+1.  **Tooling Constraints:** This app was built entirely on a smartphone using **AndroidIDE**. The environment is currently limited to **Android 14 (SDK 34)**, preventing further modernization without migrating to a PC workflow. (will work on newer Androids maybe with a warning i tested this on a phone with Android 16 it worked perfectly fine)
 2.  **Scope Complete:** The project successfully met its design goals as a functional prototype.
-3.  **Personal Bandwidth:** I am moving on to other projects.
-
 ---
 
 ## 📡 Critical Hardware Requirements
