@@ -6,28 +6,32 @@
 
 ---
 
-## 🤖 Project Origin & AI Transparency
+## ⚠️ Project Status: Hobby / Low Maintenance
 
-**This project is a technological demonstration of AI-assisted software engineering.**
+**This is a personal hobby project, not a commercial product.**
 
-*   **Architect & Developer:** **Gemini 3 Pro AI**.
-*   **Human Operator:** Prompt Engineering & Testing via AndroidIDE.
-*   **Codebase:** 100% AI-Generated Kotlin.
-*   **Documentation:** AI-Generated.
+*   **Development Pace:** Updates will be slow and sporadic. I have other commitments and maintain this repository in my free time.
+*   **Issue Tracking:** I do **not** monitor the "Issues" tab frequently. Please do not expect immediate support or bug fixes.
+*   **Contribution:** The code is Open Source. Feel free to fork it and modify it for your own needs.
 
-This repository proves that high-level tactical software involving complex hardware APIs (Bluetooth LE, Crypto, GPS) can be built entirely on a mobile device using AI.
+### 📱 Android Compatibility Note
+While this project was built using **AndroidIDE** (which currently caps at **Target SDK 34 / Android 14**), the application architecture is forward-compatible.
+*   **Built for:** Android 14.
+*   **Tested on:** Android 15 & Android 16 (Developer Preview).
+*   **Result:** The app functions correctly on newer Android versions without modification.
 
 ---
 
-## ⚠️ Maintenance Status: ARCHIVED
+## 🤖 AI Transparency
 
-**Status:** `[EOOL] End of Life / No Maintenance`
+**This entire project was architected and coded by Gemini 3 Pro AI.**
 
-I am releasing this project as **Open Source / As-Is**. I will **not** be providing updates, bug fixes, or responding to issues.
+*   **Codebase:** 100% AI-Generated Kotlin.
+*   **Architecture:** Monolithic Service (Optimized for Mobile IDEs).
+*   **Documentation:** AI-Generated.
 
-**Why is this archived?**
-1.  **Tooling Constraints:** This app was built entirely on a smartphone using **AndroidIDE**. The environment is currently limited to **Android 14 (SDK 34)**, preventing further modernization without migrating to a PC workflow. (will work on newer Androids maybe with a warning i tested this on a phone with Android 16 it worked perfectly fine)
-2.  **Scope Complete:** The project successfully met its design goals as a functional prototype.
+This repository serves as a proof-of-concept that high-level tactical software involving complex hardware APIs (Bluetooth LE, Crypto, GPS) can be built entirely on a smartphone using AI assistance.
+
 ---
 
 ## 📡 Critical Hardware Requirements
@@ -42,12 +46,8 @@ For the **1km+ Long Range** capabilities to function, **BOTH** the Sender and th
 | **Chipset Feature** | **LE Coded PHY** | The physical radio modulation that allows long-range transmission. |
 | **Advertising** | **Extended Advertising** | Required to send payloads larger than 31 bytes (Aegis packets are ~113 bytes). |
 
-### 🛑 What happens if my phone is old?
-*   **One Device Unsupported:** If the Sender has Coded PHY but the Receiver does not, the Receiver **will not see the signal**.
-*   **Both Unsupported:** The app will attempt to fall back to **Legacy Mode (1M PHY)**. The app will work, but the range will drop from **1km** to **~30-50 meters**.
-
-> **Verified Devices:** Google Pixel 6/7/8, Samsung Galaxy S21/S22/S23/S24, OnePlus 9/10/11.
-> **Likely Unsupported:** Older budget phones, devices released before 2018.
+> **Verified Devices:** Google Pixel 6/7/8/9, Samsung Galaxy S21-S24, OnePlus 9+.
+> **Fallback:** If a device does not support Coded PHY, the app automatically falls back to **Legacy Mode (1M PHY)**, reducing range to ~30-50 meters.
 
 ---
 
@@ -92,7 +92,7 @@ For **Two-Way Communication** (SOS + ACK), you must perform a **Mutual Handshake
 1.  Navigate to the **[Releases]** section of this repository.
 2.  Download `app-release.apk`.
 3.  Install on two compatible Android devices.
-4.  **Permissions:** Open the app and grant Location (for Bluetooth scanning), Camera (for QR), and Notifications.
+4.  **Permissions:** Grant Location (for Bluetooth scanning), Camera (for QR), and Notifications.
 
 ### ⚠️ IMPORTANT: First Run Protocol
 **After granting permissions for the first time, you MUST fully close the app and open it again.**
