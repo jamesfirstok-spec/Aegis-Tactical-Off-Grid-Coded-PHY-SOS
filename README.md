@@ -94,10 +94,16 @@ For **Two-Way Communication** (SOS + ACK), you must perform a **Mutual Handshake
 1.  Navigate to the **[Releases]** section of this repository.
 2.  Download `app-release.apk`.
 3.  Install on two compatible Android devices.
-4.  **Permissions:** Grant Location (for Bluetooth scanning), Camera (for QR), and Notifications.
-5.  **Boot:** Press the **"BOOT SYSTEM"** button to initialize the radio engine.
-6.  **Pair:** Perform the Mutual Pairing (described above).
-7.  **Test:** Walk 500m away and press **SOS**.
+4.  **Permissions:** Open the app and grant Location (for Bluetooth scanning), Camera (for QR), and Notifications.
+
+### ⚠️ IMPORTANT: First Run Protocol
+**After granting permissions for the first time, you MUST fully close the app and open it again.**
+1.  Grant Permissions.
+2.  Swipe the app away from your "Recent Apps" list (Force Close).
+3.  Re-open the app.
+4.  Press **"BOOT SYSTEM"**.
+
+*This ensures the Bluetooth and GPS engines initialize correctly with the newly granted permissions.*
 
 ---
 
