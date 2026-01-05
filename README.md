@@ -1,6 +1,7 @@
 # 🛡️ Aegis Tactical - Off-Grid Coded PHY SOS
 
 **Aegis** is a decentralized, peer-to-peer emergency communication system designed for Android. It leverages the **Bluetooth 5.0 Long Range (Coded PHY)** specification to transmit encrypted SOS signals over extreme distances (1km+ Line-of-Sight) without reliance on cellular networks, Wi-Fi, or satellites.
+NOTE: THIS APP DOES NOT USE BLUETOOTH MESH NETWORKING. IT USES CODED PHY S=8 FOR THE 1KM+ POINT TO POINT BLUETOOTH SOS COMMUNICATION. ALL ON YOUR ANDROID PHONE
 
 > **"When the grid goes down, Aegis wakes up."**
 
